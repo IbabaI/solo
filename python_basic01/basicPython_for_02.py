@@ -1,14 +1,18 @@
 # Loop
 # for문
-# 구구단
-num = int (input('Multplication table of : ')) # 몇단을 입력할까요?
 
-for i in range(1, 10):
-    print(num, 'X', i, '=', num*i)
+stationfares = [
+    {"station": "청량리", "fare": 1500 },
+    {"station": "성북", "fare": 1000 },
+    {"station": "의정부", "fare": 2000 },
+    {"station": "소요산", "fare": 2500 }
+]
 
-# 중첩반복문
-# 구구단 2단부터 9단까지
-for i in range(2, 10):   # 앞에 단의 수 (2단, 3단...)
-    for j in range (1, 10): # 뒤에 곱하기 수
-        print('%2d X %2d = %5d' %(i, j, i*j))  # %2d는 두자리  %5d는 다섯자리
-    print('--------------------')
+stations = []
+fares = []
+
+for stationfare in stationfares:
+    stations.append(stationfare["station"])
+    fares.append(stationfare["fare"])
+print(stations)
+print(fares)
