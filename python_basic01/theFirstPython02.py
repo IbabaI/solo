@@ -1,27 +1,29 @@
-# List
+# Dictionary
 
-from tkinter.font import names
+stationfares = []
+dic = {}
+station = input('Enter station : ')
+fare = int(input('Enter fare : '))  # 데이터 변환
+dic [ 'station' ] = station
+dic [ 'fare' ] = fare
+stationfares.append(dic)
+print(dic)
+print(stationfares)
 
 
-name = []
-name = input('Enter name : ')
-names.append(name)
-print(names)
+dic = {}
+station = '강남' #@param {type:"string"}
+fare = 2000 #@param {type:"integer"}
+dic [ 'station' ] = station
+dic [ 'fare' ] = fare
+stationfares.append(dic)
+print(dic)
+print(stationfares)
 
-name = 'Tom' #@param{type:"String"}
-names.append(name)
-print(names)
 
-name = 'Jonadan' #@param{type:"String"}
-names.append(name)
-print(names)
+stationfares[0] #{'fare':1500, 'starion : '청량리'}
 
-names[1]
+dic.keys() #dict_keys(['station' , 'fare' ])
 
-names[0]
+dic.values() #dict_values(['성북' , '2000'])
 
-names[-1]
-
-names[0:2]  #0부터 2번까지
-
-names[1:]  # 1부터 끝까지
