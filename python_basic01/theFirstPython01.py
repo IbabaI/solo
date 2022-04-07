@@ -26,7 +26,7 @@ names[0:2]  #0부터 2번까지
 
 names[1:]  # 1부터 끝까지
 
-len(names)
+len(names) 
 
 names
 names.index('jonadan')
